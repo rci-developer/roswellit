@@ -1,0 +1,73 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeFile="Site.Master.vb" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+<title>One Optical - <%: Page.Title %></title>
+<meta name="description" content="One Optical">
+<meta name="author" content="Kevin Murphy, Roswell IT Services | roswellit.com">
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="scripts/html5shiv.js"></script>
+<![endif]--> 
+
+    <link href="~/favicon.png" rel="shortcut icon" type="image/x-icon" />
+<!-- CSS -->
+<link rel="stylesheet" href="~/Content/bootstrap.min.css"/>
+<link rel="stylesheet" href="~/Content/style.css"/>
+<link rel="stylesheet" href="~/Content/iconfont-style.css"/>
+
+
+<!-- Favicons -->
+<link rel="icon" href="~/images/favicon.png">
+<link rel="apple-touch-icon" href="~/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="~/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="~/images/apple-touch-icon-114x114.png">
+</head>
+
+<body class="bg4">
+
+    <div id="main-bg">
+</div>
+
+<div id="wrap"> 
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- FOOTER BEGIN -->
+	<footer id="footer">
+			<!--<ul class="soc_nav">
+				<li><a href="#" class="icon-googleplus2"></a></li>
+				<li><a href="#" class="icon-facebook2"></a></li>
+				<li><a href="#" class="icon-twitter2"></a></li>
+				<li><a href="#" class="icon-dribbble2"></a></li>
+				<li><a href="#" class="icon-linkedin2"></a></li>
+			</ul>-->
+			<p>&copy; 2014 One Optical<br>Site Provided by <a href="http://roswellit.com/" target="_blank">Roswell IT Services Ltd</a></p>
+	</footer>
+	<!-- FOOTER END --> 
+	
+</div>
+
+
+
+<!-- JavaScript -->
+<script src="scripts/jquery-1.8.2.min.js"></script> 
+<script src="scripts/bootstrap.min.js"></script> 
+<script src="scripts/owl.carousel.min.js"></script> 
+<script src="scripts/jquery.validate.min.js"></script> 
+<script src="scripts/smoothscroll.js"></script>
+<script src="scripts/jquery.superslides.min.js"></script>
+<script src="scripts/placeholders.jquery.min.js"></script>
+<script src="scripts/custom.js"></script>
+
+
+<!--[if lte IE 9]>
+	<script src="scripts/respond.min.js"></script>	
+<![endif]--> 
+</body>
+</html>

@@ -1,0 +1,16 @@
+<CiscoIPPhoneDirectory>
+  <Title>Cisco Coporate Directory</Title> 
+  <Prompt>Select the User</Prompt> 
+<DirectoryEntry>
+  <Name>Shze Chew Lee</Name> 
+  <Telephone>140</Telephone> 
+  </DirectoryEntry>
+<DirectoryEntry>
+  <Name>Sherman Scholten</Name> 
+  <Telephone>130</Telephone> 
+  </DirectoryEntry>
+<DirectoryEntry>
+  <Name>Josh Bottum</Name> 
+  <Telephone>186</Telephone> 
+  </DirectoryEntry>
+  </CiscoIPPhoneDirectory>
