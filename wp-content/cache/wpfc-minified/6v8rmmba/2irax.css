@@ -1,0 +1,24 @@
+.aligncenter {
+width: 725px !important;
+} .qodef-title-subtitle-holder-inner span {
+padding-right: 150px !important;
+} h1 span {
+padding-right: 200px !important;
+} .qodef-light-logo {
+width: 400px !important;
+} .qodef-subtitle span {
+padding-top: 0 !important;
+} .qodef-title-subtitle-holder-inner > h1:nth-of-type(1) > span {
+padding-top: 200px !important;
+top: 150px !important;
+} .wp-image-7534 {
+padding-left: 0px !important;
+} @media (max-width: 767px) {  #nav-menu-item-6417 > a:nth-of-type(1) > span:nth-of-type(1) > .item_inner {
+color: rgb(255, 255, 255) !important;
+} #nav-menu-item-7427 > a:nth-of-type(1) > span:nth-of-type(1) > .item_inner {
+color: rgb(255, 255, 255) !important;
+margin-right: 40px !important;
+} .vc_custom_1516636490110 .qodef-section-inner-margin {
+margin-right: 0 !important;
+}
+}

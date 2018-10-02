@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^.*$ https://roswellit.com/webportal [R=301]
+

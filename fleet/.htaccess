@@ -1,0 +1,82 @@
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+
+    # Redirect to URI without front controller to prevent duplicate content
+    # (with and without `/app.php`). Only do this redirect on the initial
+    # rewrite by Apache and not on subsequent cycles. Otherwise we would get an
+    # endless redirect loop (request -> rewrite to front controller ->
+    # redirect -> request -> ...).
+    # So in case you get a "too many redirects" error or you always get redirected
+    # to the startpage because your Apache does not expose the REDIRECT_STATUS
+    # environment variable, you have 2 choices:
+    # - disable this feature by commenting the following 2 lines or
+    # - use Apache >= 2.3.9 and replace all git cheL flags by END flags and remove the
+    #   following RewriteCond (best solution)
+     RewriteCond %{ENV:REDIRECT_STATUS} ^$
+    RewriteRule ^index\.php(/(.*)|$) %{CONTEXT_PREFIX}/$2 [R=301,L]
+
+    # If the requested filename exists, simply serve it.
+    # We only want to let Apache serve files and not directories.
+     RewriteCond %{REQUEST_FILENAME} -f
+     RewriteRule .? - [L]
+
+    # The following rewrites all other queries to the front controller. The
+    # condition ensures that if you are using Apache aliases to do mass virtual
+    # hosting, the base path will be prepended to allow proper resolution of the
+    # app.php file; it will work in non-aliased environments as well, providing
+    # a safe, one-size fits all solution.
+     RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
+     RewriteRule ^(.*) - [E=BASE:%1]
+     RewriteRule .? %{ENV:BASE}index.php [L]
+
+    # Order deny,allow
+    # Deny from all
+	# AuthUserFile /home/sites/roswellit.com/.htpasswd
+	# AuthType Basic
+    # AuthName "Password protected"
+    # Require valid-user
+    # Allow from 127.0.0.1  # your yealink phone IP.
+	# allow from 62.232.69.130
+	# allow from 78.32.67.71
+	# allow from 176.35.157.151
+	# allow from 78.32.195.182
+	# allow from 78.32.129.154
+	# allow from 109.204.114.56
+	# allow from 87.127.97.33
+	# allow from 78.32.67.71
+	# allow from 78.32.228.146
+	# allow from 87.127.9.145
+	# allow from 78.32.67.71
+	# allow from 62.232.218.3
+	# allow from 62.232.146.42
+	# allow from 176.35.157.67
+	# allow from 176.35.157.65
+	# allow from 62.232.218.51
+    # Satisfy Any
+</IfModule>
+
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+<Files ./contact>
+  order deny,allow
+  deny from all
+  allow from 62.232.146.42
+  allow from 62.232.218.3
+  allow from 62.232.69.130
+  allow from 176.35.157.151
+  allow from 78.32.195.182
+  allow from 78.32.129.154
+  allow from 109.204.114.56
+  allow from 87.127.97.33
+  allow from 78.32.67.71
+  allow from 62.232.95.130
+  allow from 62.232.218.51
+</Files>
+
+ErrorDocument 403 http://www.roswellit.com 

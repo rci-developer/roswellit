@@ -1,0 +1,22 @@
+/*----------------------------------------------------------------------------------------
+									COLOR STYLES
+----------------------------------------------------------------------------------------*/
+
+/*lightest*/
+.color1{ color:#f3eef4 !important;}
+.bg1{ background-color:#f3eef4;}
+.border-color1{ border-color:#f3eef4;}
+
+.color2{ color:#b5a4bc !important;}
+.bg2{ background-color:#b5a4bc;}
+.border-color2{ border-color:#b5a4bc;}
+
+.color3{ color:#644372 !important;}
+.bg3{ background-color:#644372; color:#ddd;}
+.bg3 h2,.bg3 h3,.bg3 h4, .icon{color:#fff;}
+.border-color3{ border-color:#644372;}
+
+/*darkest*/
+.color4{ color:#3e254a !important;}
+.bg4{ background-color:#3e254a;}
+.border-color4{ border-color:#3e254a;} 

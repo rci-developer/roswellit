@@ -1,0 +1,63 @@
+/*  MICROTHEMER STYLES  */
+
+
+/*= General =================== */
+
+/** General >> Aligncenter **/
+.aligncenter {
+	width: 725px !important;
+}
+
+/** General >> Qodef title subtitle holder inner span **/
+.qodef-title-subtitle-holder-inner span {
+	padding-right: 150px !important;
+}
+
+/** General >> Heading 1 span **/
+h1 span {
+	padding-right: 200px !important;
+}
+
+/** General >> Qodef light logo **/
+.qodef-light-logo {
+	width: 400px !important;
+}
+
+/** General >> Qodef subtitle span **/
+.qodef-subtitle span {
+	padding-top: 0 !important;
+}
+
+/** General >> Heading 1:(1) span **/
+.qodef-title-subtitle-holder-inner > h1:nth-of-type(1) > span {
+	padding-top: 200px !important;
+	top: 150px !important;
+}
+
+/** General >> Wp image 7534 **/
+.wp-image-7534 {
+	padding-left: 0px !important;
+}
+
+
+/*[ Tablet & Phone ]*/
+@media (max-width: 767px) {
+
+	/*= General =================== */
+
+	/** General >> Span:(1) item **/
+	#nav-menu-item-6417 > a:nth-of-type(1) > span:nth-of-type(1) > .item_inner {
+		color: rgb(255, 255, 255) !important;
+	}
+
+	/** General >> Span:(1) item _2 **/
+	#nav-menu-item-7427 > a:nth-of-type(1) > span:nth-of-type(1) > .item_inner {
+		color: rgb(255, 255, 255) !important;
+		margin-right: 40px !important;
+	}
+
+	/** General >> Vc qodef section inner margin **/
+	.vc_custom_1516636490110 .qodef-section-inner-margin {
+		margin-right: 0 !important;
+	}
+}
